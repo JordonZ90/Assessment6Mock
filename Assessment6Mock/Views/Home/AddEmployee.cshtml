@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "AddEmployee";
+}
+
+<h1>Add Employee</h1>
+
+@Html.ValidationSummary()
+
+
+<form action="../Home/AddEmployee" method="post" class="form-control">
+    First Name: <input type="text" name="FirstName" />
+    Age: <input type="number" name="Age" />
+    Salary: <input type="number" name="Salary" value="true" />
+    <input type="submit" value="Add a new Employee!" />
+</form>
+

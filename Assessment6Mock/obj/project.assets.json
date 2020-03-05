@@ -8239,11 +8239,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zigar\\Desktop\\WORKMVC\\Assessment6Mock\\Assessment6Mock\\Assessment6Mock.csproj",
+      "projectUniqueName": "C:\\Users\\zigar\\Desktop\\Assessment6Mock\\Assessment6Mock\\Assessment6Mock.csproj",
       "projectName": "Assessment6Mock",
-      "projectPath": "C:\\Users\\zigar\\Desktop\\WORKMVC\\Assessment6Mock\\Assessment6Mock\\Assessment6Mock.csproj",
+      "projectPath": "C:\\Users\\zigar\\Desktop\\Assessment6Mock\\Assessment6Mock\\Assessment6Mock.csproj",
       "packagesPath": "C:\\Users\\zigar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zigar\\Desktop\\WORKMVC\\Assessment6Mock\\Assessment6Mock\\obj\\",
+      "outputPath": "C:\\Users\\zigar\\Desktop\\Assessment6Mock\\Assessment6Mock\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zigar\\AppData\\Roaming\\NuGet\\NuGet.Config",

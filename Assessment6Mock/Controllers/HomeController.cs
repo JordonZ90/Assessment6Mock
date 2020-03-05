@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Assessment6Mock.Models;
+using System.Security.Claims;
 
 namespace Assessment6Mock.Controllers
 {
@@ -35,6 +36,30 @@ namespace Assessment6Mock.Controllers
             }
             ViewBag.Benefits = findEmployee.Salary * 0.6; //(double)findEmployee.Salary * 0.6;
             return View();
+        }
+        [HttpGet]
+        public IActionResult AddEmployee()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult AddEmployee(Employee newEmployee)
+        {
+            // strictly identity
+            //newEmployee.Id = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            if (ModelState.IsValid)
+            {
+                _context.Employee.Add(newEmployee);
+                _context.SaveChanges();
+
+                return RedirectToAction("Employee");
+            }
+            else
+            {
+                return View();
+            }
         }
 
         public IActionResult Index()
